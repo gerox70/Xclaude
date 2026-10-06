@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IES Padre Anchieta · Ofra, La Laguna (Tenerife)</title>
+<meta name="description" content="Instituto de Educación Secundaria en Ofra, San Cristóbal de La Laguna. ESO, Bachillerato y Formación Profesional con inglés integrado y proyectos Erasmus+.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F8FB;--surface:#fff;--ink:#0E2238;--muted:#485A6F;--brand:#123C69;--accent:#1B7F8E;--sun:#F4B63F;--line:#D8E0E9;--hero:#123C69;--hero2:#1D5185;--on-hero:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--h:'Bricolage Grotesque','Segoe UI',Arial,sans-serif;--b:'Source Sans 3','Segoe UI',Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1520;--surface:#12212F;--ink:#E8EEF5;--muted:#9FB0C3;--brand:#8CBDE8;--accent:#5CC0CF;--line:#25384B;--hero:#0F2D4F;--hero2:#16406B}}
+:root[data-theme="dark"]{--bg:#0B1520;--surface:#12212F;--ink:#E8EEF5;--muted:#9FB0C3;--brand:#8CBDE8;--accent:#5CC0CF;--line:#25384B;--hero:#0F2D4F;--hero2:#16406B}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--b)}
+h1,h2,h3{font-family:var(--h);line-height:1.12;margin:0;color:var(--ink)}
+a{color:var(--brand)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--surface);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font:700 1.05rem/1.1 var(--h)}
+.logo small{display:block;font:400 .78rem var(--b);color:var(--muted)}
+nav{display:flex;align-items:center;gap:26px}
+nav a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.97rem}
+nav a:hover{color:var(--accent)}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none;background:var(--sun);color:#0E2238;border:2px solid var(--sun)}
+.btn.alt{background:transparent;color:var(--on-hero);border-color:rgba(255,255,255,.55)}
+nav .btn{padding:9px 18px;color:#0E2238}
+.menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:8px 12px;font:600 .95rem var(--b)}
+.hero{background:linear-gradient(180deg,var(--hero) 0,var(--hero2) 100%);color:var(--on-hero);position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:2;padding-top:84px;padding-bottom:210px}
+.hero h1{color:var(--on-hero);font-size:clamp(2.3rem,6vw,4.3rem);max-width:15ch;letter-spacing:-.02em}
+.hero p{max-width:52ch;font-size:1.2rem;margin:22px 0 32px;color:#DCE8F5}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero svg{position:absolute;left:0;bottom:-1px;width:100%;height:auto;z-index:1}
+.sun{animation:rise 1.6s ease-out both}
+@keyframes rise{from{transform:translateY(60px);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.sun{animation:none}html{scroll-behavior:auto}}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-bottom:1px solid var(--line);background:var(--surface)}
+.facts div{padding:22px 24px;border-left:1px solid var(--line)}
+.facts div:first-child{border-left:0}
+.facts strong{font:700 1.1rem var(--h);display:block}
+.facts span{color:var(--muted);font-size:.98rem}
+section{padding:84px 0}
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:start}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:20px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:60ch}
+.aside{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--sun);border-radius:6px;padding:28px}
+.aside h3{font-size:1.3rem;margin-bottom:10px}
+.tabs{display:flex;gap:6px;border-bottom:2px solid var(--line);margin:30px 0 0;flex-wrap:wrap}
+.tabs button{background:none;border:0;padding:12px 20px;font:600 1.02rem var(--b);color:var(--muted);cursor:pointer;border-bottom:4px solid transparent;margin-bottom:-2px}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.panel{background:var(--surface);border:1px solid var(--line);border-top:0;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:12px 48px}
+.panel[hidden]{display:none}
+.panel h3{font-size:1.5rem;grid-column:1/-1}
+.panel ul{margin:0;padding-left:20px}
+.panel li{margin-bottom:8px}
+.proj{background:var(--surface);border-block:1px solid var(--line)}
+.proj dl{margin:34px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0 64px}
+.proj dt{font:700 1.2rem var(--h);padding-top:26px;border-top:1px solid var(--line)}
+.proj dd{margin:6px 0 26px;color:var(--muted)}
+.fam{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:30px}
+.fam h3{font-size:1.2rem;margin-bottom:8px;padding-bottom:10px;border-bottom:3px solid var(--accent)}
+.fam p{margin:0;color:var(--muted)}
+.contact{background:var(--hero);color:var(--on-hero)}
+.contact h2,.contact a{color:var(--on-hero)}
+.contact .two{align-items:center}
+.contact address{font-style:normal;line-height:1.9}
+.contact .note{font-size:.88rem;color:#B9CCE0;margin-top:14px}
+footer{padding:26px 0;font-size:.92rem;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:820px){
+.menu{display:block}
+nav{display:none;position:absolute;left:0;right:0;top:68px;background:var(--surface);flex-direction:column;align-items:flex-start;padding:18px 24px;border-bottom:1px solid var(--line);gap:16px}
+nav.open{display:flex}
+.two,.proj dl,.fam,.panel,.facts{grid-template-columns:1fr}
+.facts div{border-left:0;border-top:1px solid var(--line)}.facts div:first-child{border-top:0}
+.two{gap:32px}section{padding:60px 0}
+.hero .wrap{padding-top:56px;padding-bottom:150px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap bar">
+<a class="logo" href="#top" aria-label="IES Padre Anchieta, inicio">
+<svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true"><rect width="38" height="38" rx="9" fill="#123C69"/><circle cx="26" cy="13" r="5" fill="#F4B63F"/><path d="M4 31 17 12l5 7 3-3 9 15z" fill="#fff"/></svg>
+<span>IES Padre Anchieta<small>Ofra · La Laguna · Tenerife</small></span></a>
+<button class="menu" aria-expanded="false" aria-controls="nav">Menú</button>
+<nav id="nav" aria-label="Principal">
+<a href="#centro">El centro</a><a href="#oferta">Oferta educativa</a><a href="#proyectos">Proyectos</a><a href="#familias">Familias</a><a class="btn" href="#contacto">Contactar</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+<div class="hero">
+<div class="wrap">
+<h1>Aprender en Ofra, mirando al mundo</h1>
+<p>Educación Secundaria, Bachillerato y Formación Profesional en San Cristóbal de La Laguna, con inglés integrado en el aula y proyectos europeos.</p>
+<div class="cta"><a class="btn" href="#oferta">Ver oferta educativa</a><a class="btn alt" href="#contacto">Cómo llegar</a></div>
+</div>
+<svg viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+<circle class="sun" cx="1130" cy="70" r="42" fill="#F4B63F"/>
+<path d="M0 220V150l180-30 160 40 200-60 230 20 120-70 60-10 70 10 120 80 150-30 150 20v100z" fill="#0B2A4A" opacity=".55"/>
+<path d="M0 220v-40l220-20 200 30 260-50 180 10 150-40 70-5 90 45 170-10 140 25 100-15 160 40v50z" fill="var(--bg)"/>
+</svg>
+</div>
+
+<div class="facts">
+<div><strong>ESO, Bachillerato y FP</strong><span>Un recorrido completo en un mismo centro.</span></div>
+<div><strong>Programa AICLE</strong><span>Materias impartidas en inglés para ganar fluidez.</span></div>
+<div><strong>Centro Erasmus+</strong><span>Intercambios y proyectos con centros europeos.</span></div>
+</div>
+
+<section id="centro">
+<div class="wrap two">
+<div>
+<h2>Un instituto con historia lagunera</h2>
+<p class="lead">El IES Padre Anchieta forma a generaciones de jóvenes en Ofra, a pocos minutos del casco histórico de La Laguna, Patrimonio Mundial de la UNESCO. Trabajamos para que cada alumno termine la etapa con las herramientas académicas, profesionales y sociales para dar el siguiente paso.</p>
+<p class="lead">Nos guían la inclusión, la responsabilidad y el respeto. Incorporamos la tecnología y la sostenibilidad al día a día del aula, y participamos en la vida del barrio.</p>
+</div>
+<aside class="aside">
+<h3>Por qué Padre Anchieta</h3>
+<p>El centro lleva el nombre de José de Anchieta, jesuita nacido en La Laguna en 1534 y conocido como el «Apóstol del Brasil». Un lagunero que cruzó el Atlántico: el mismo espíritu abierto que queremos para nuestro alumnado.</p>
+</aside>
+</div>
+</section>
+
+<section id="oferta" style="padding-top:0">
+<div class="wrap">
+<h2>Oferta educativa</h2>
+<p class="lead">Tres etapas, una misma comunidad. Elige una para ver en qué consiste.</p>
+<div class="tabs" role="tablist" aria-label="Etapas educativas">
+<button role="tab" id="t0" aria-selected="true" aria-controls="p0">ESO</button>
+<button role="tab" id="t1" aria-selected="false" aria-controls="p1" tabindex="-1">Bachillerato</button>
+<button role="tab" id="t2" aria-selected="false" aria-controls="p2" tabindex="-1">Formación Profesional</button>
+</div>
+<div class="panel" role="tabpanel" id="p0" aria-labelledby="t0">
+<h3>Educación Secundaria Obligatoria</h3>
+<p>Cuatro cursos, de los 12 a los 16 años, para consolidar una base sólida y descubrir qué camino seguir.</p>
+<ul><li>Programa AICLE: materias en inglés</li><li>Tutoría y orientación personalizadas</li><li>Atención a la diversidad</li></ul>
+</div>
+<div class="panel" id="p1" role="tabpanel" aria-labelledby="t1" hidden>
+<h3>Bachillerato</h3>
+<p>Dos cursos para prepararse con rigor hacia la universidad y los estudios superiores.</p>
+<ul><li>Orientación para el acceso a la universidad</li><li>Itinerarios según tus intereses</li><li>Idiomas y proyectos europeos</li></ul>
+</div>
+<div class="panel" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+<h3>Formación Profesional</h3>
+<p>Formación práctica orientada al empleo y a la continuidad de estudios. Consulta en secretaría los ciclos que se imparten cada curso.</p>
+<ul><li>Aprendizaje conectado con empresas</li><li>Salida laboral o estudios superiores</li><li>Oportunidades de movilidad Erasmus+</li></ul>
+</div>
+</div>
+</section>
+
+<section class="proj" id="proyectos">
+<div class="wrap">
+<h2>Proyectos que abren puertas</h2>
+<dl>
+<dt>Aprender en inglés (AICLE)</dt><dd>El inglés se usa para aprender otras materias, no solo para estudiarlo. Los alumnos ganan fluidez de forma natural.</dd>
+<dt>Erasmus+</dt><dd>Alumnado y profesorado participan en intercambios y trabajo conjunto con centros de toda Europa.</dd>
+<dt>Tecnología y sostenibilidad</dt><dd>Recursos digitales y hábitos responsables con el entorno forman parte del currículo.</dd>
+<dt>Comunidad educativa</dt><dd>Familias, profesorado y barrio colaboran para que cada estudiante se sienta parte del centro.</dd>
+</dl>
+</div>
+</section>
+
+<section id="familias">
+<div class="wrap">
+<h2>Información para familias</h2>
+<p class="lead">Todo lo necesario para acompañar el curso de tu hijo o hija.</p>
+<div class="fam">
+<div><h3>Matrícula y secretaría</h3><p>Plazos, documentación y gestiones administrativas. Horario de atención: por completar.</p></div>
+<div><h3>Comunicación con el centro</h3><p>Contacta con tutores y equipo directivo para resolver dudas durante el curso.</p></div>
+<div><h3>Orientación</h3><p>Apoyo para elegir itinerarios, estudios posteriores y salidas profesionales.</p></div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contacto">
+<div class="wrap two">
+<div>
+<h2>Visítanos en Ofra</h2>
+<address>
+IES Padre Anchieta<br>
+Ofra, San Cristóbal de La Laguna<br>
+Santa Cruz de Tenerife, Islas Canarias<br>
+Teléfono: [por completar]<br>
+Correo: [por completar]
+</address>
+<p class="note">Los datos de contacto y horarios se confirmarán con el centro antes de publicar.</p>
+</div>
+<div>
+<p style="margin-top:0;font-size:1.15rem">Estamos junto al Hospital Universitario de Canarias, en una zona bien comunicada de La Laguna.</p>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=IES+Padre+Anchieta+Ofra+La+Laguna" target="_blank" rel="noopener">Abrir en Google Maps</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 IES Padre Anchieta · Consejería de Educación del Gobierno de Canarias</span><span>Aviso legal · Privacidad · Accesibilidad</span></div></footer>
+
+<script>
+(function(){
+var tabs=[].slice.call(document.querySelectorAll('[role=tab]')),panels=[].slice.call(document.querySelectorAll('[role=tabpanel]'));
+function sel(i){tabs.forEach(function(t,j){var on=i===j;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;panels[j].hidden=!on});}
+tabs.forEach(function(t,i){t.addEventListener('click',function(){sel(i)});t.addEventListener('keydown',function(e){var n=e.key==='ArrowRight'?(i+1)%3:e.key==='ArrowLeft'?(i+2)%3:-1;if(n>-1){sel(n);tabs[n].focus()}})});
+var m=document.querySelector('.menu'),nav=document.getElementById('nav');
+m.addEventListener('click',function(){var o=nav.classList.toggle('open');m.setAttribute('aria-expanded',o)});
+nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');m.setAttribute('aria-expanded','false')}});
+})();
+</script>
+</body>
+</html>
